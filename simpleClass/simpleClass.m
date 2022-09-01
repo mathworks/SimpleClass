@@ -27,12 +27,12 @@ classdef simpleClass < handle
         end
         
         function status = compute(this) % compute distance between x and y
-            try
+%             try             % Uncomment to see the error in Code Generation Readiness review
                 this.z = ((this.y(1)-this.x(1))^2+(this.y(2)-this.x(2))^2)^0.5;
                 status = true;
-            catch
-                status = false;
-            end
+%             catch           % Uncomment to see the error in Code Generation Readiness review
+%                 status = false;
+%             end
         end
         
         function [sx,varargout] = sizeX(this) % get size
